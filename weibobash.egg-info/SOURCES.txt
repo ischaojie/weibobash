@@ -1,0 +1,10 @@
+setup.py
+weibo_bash/__init__.py
+weibo_bash/weibo_bash.py
+weibobash.egg-info/PKG-INFO
+weibobash.egg-info/SOURCES.txt
+weibobash.egg-info/dependency_links.txt
+weibobash.egg-info/entry_points.txt
+weibobash.egg-info/not-zip-safe
+weibobash.egg-info/requires.txt
+weibobash.egg-info/top_level.txt

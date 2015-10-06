@@ -1,0 +1,3 @@
+[console_scripts]
+weibobash = weibo_bash.weibo_bash:main
+
