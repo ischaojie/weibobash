@@ -9,15 +9,15 @@ import  getopt
 import sys
 import configparser
 
-versions = '0.1'
+versions = '0.1.5'
 
 
 # 写入用户数据
 def write_data(uname, pwd):
     conf = configparser.ConfigParser()
-    conf['config'] = {}
-    conf['config']['username'] = uname
-    conf['config']['password'] = pwd
+    conf['LOGIN'] = {}
+    conf['LOGIN']['username'] = uname
+    conf['LOGIN']['password'] = pwd
     with open('config.ini', 'w') as configfile:
         conf.write(configfile)
     print('写入成功')
@@ -26,8 +26,13 @@ def write_data(uname, pwd):
 # 读取用户数据
 config = configparser.ConfigParser()
 config.read('config.ini')
-username = config['config']['username']
-password = config['config']['password']
+username = ''
+password = ''
+if 'LOGIN' in config:
+    username = config['LOGIN']['username']
+    password = config['LOGIN']['password']
+else:
+    print('确保已完成登陆.请填写用户名和密码.')
 
 # 接入新浪接口基本信息
 api_key = '3842240593'

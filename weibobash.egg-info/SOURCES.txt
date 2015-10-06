@@ -1,5 +1,7 @@
+MANIFEST.in
 setup.py
 weibo_bash/__init__.py
+weibo_bash/config.ini
 weibo_bash/weibo_bash.py
 weibobash.egg-info/PKG-INFO
 weibobash.egg-info/SOURCES.txt

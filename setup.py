@@ -5,7 +5,7 @@ try:
 except:
     from distutils.core import setup
 
-version = '0.1'
+version = '0.1.5'
 
 setup(name='weibobash',
       version=version,
@@ -15,18 +15,15 @@ setup(name='weibobash',
       keywords='python weibobash dictionary terminal',
       author='zhuzhezhe',
       author_email='zhuzhezhe95@163.com',
-      url='http://zhuzhezhe.github.io',
+      url='https://github.com/zhuzhezhe/weibobash',
       license='MIT',
       include_package_data=True,
       zip_safe=False,
       install_requires=[
         'weibo',
       ],
-      package_data = {
-        # If any package contains *.txt or *.rst files, include them:
-        '': ['*.txt', '*.rst'],
-        # And include any *.msg files found in the 'hello' package, too:
-        'weibo_bash': ['*.ini'],
+      package_data={
+        '': ['*.txt', '*.ini'],
         },
       # 配置使在命令行运行
        entry_points={
