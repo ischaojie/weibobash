@@ -33,7 +33,7 @@
 **MIT**
 
 ### 联系我
-[个人网站](http://zhuzhezhe.github.io)
+[个人网站](http://blog.zhuzhezhe.cc)
 
 邮箱：zhuzhezhe95@163.com
 
